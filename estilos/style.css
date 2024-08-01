@@ -2,19 +2,68 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+
 /*
 Palheta de cores
 Login: #262624, #59231E, #F2622E, #F29849, #F2C063
 Background: #400101, #730202, #F25C05, #72B6F2, #66A3F2
 */
 
+:root {
+    /* FONTES */
+    --font1: "Josefin Sans";
+    --font2: "Playwrite AT";
+
+    /* CORES LOGIN */
+    --cor1: #262624;
+    --cor2: #59231E;
+    --cor3: #F2622E;
+    --cor4: #F29849;
+    --cor5: #F2C063;
+
+    /* CORES BACKGROUND */
+    --cor6: #400101;
+    --cor7: #730202;
+    --cor8: #F25C05;
+    --cor9: #72B6F2;
+    --cor10: #66A3F2;
+}
+
+
+
 * {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: var(--font1), sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
 body, html {
-    background-color: ;
+    background-color: var(--cor7);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+section#login > div#imagem {
+    background: var(--cor7) url(../imagens/login.jpg);
+    height: 200px;
 }
