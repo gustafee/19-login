@@ -64,6 +64,18 @@ section#login {
 }
 
 section#login > div#imagem {
-    background: var(--cor7) url(../imagens/login.jpg);
-    height: 200px;
+    background-image: url(../imagens/login.jpg);
+    height: 190px;
+
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    background-position: center; /* Centraliza a imagem */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
+
+
+
+
