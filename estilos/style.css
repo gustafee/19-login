@@ -61,9 +61,11 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 section#login > div#imagem {
+    display: block;
     background-image: url(../imagens/login.jpg);
     height: 190px;
 
@@ -76,6 +78,7 @@ section#login > div#imagem {
     border-radius: 15px;
 }
 
-
-
-
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
