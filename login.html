@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedagem de Casas e Prédios Chineses</title>
+    <style>
+        :root {
+            /* FONTES */
+            --font1: "Josefin Sans", sans-serif;
+            --font2: "Playwrite AT", serif;
+
+            /* CORES LOGIN */
+            --cor1: #262624;
+            --cor2: #59231E;
+            --cor3: #F2622E;
+            --cor4: #F29849;
+            --cor5: #F2C063;
+
+            /* CORES BACKGROUND */
+            --cor6: #400101;
+            --cor7: #730202;
+            --cor8: #F25C05;
+            --cor9: #72B6F2;
+            --cor10: #66A3F2;
+        }
+
+        body {
+            font-family: var(--font1);
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor9);
+        }
+
+        header {
+            background-color: var(--cor1);
+            color: var(--cor5);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: var(--font2);
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+
+        .photo {
+            flex: 1 1 calc(33% - 2em);
+            box-sizing: border-box;
+            background-color: var(--cor2);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .photo p {
+            margin: 0;
+            padding: 0.5em;
+            background-color: var(--cor3);
+            color: var(--cor5);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hospedagem de Casas e Prédios Chineses</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="photo">
+                <img src="https://www.example.com/imagem1.jpg" alt="Casa Chinesa 1">
+                <p>Casa Chinesa Tradicional</p>
+            </div>
+            <div class="photo">
+                <img src="https://www.example.com/imagem2.jpg" alt="Casa Chinesa 2">
+                <p>Casa Chinesa Moderna</p>
+            </div>
+            <div class="photo">
+                <img src="https://www.example.com/imagem3.jpg" alt="Prédio Chinês 1">
+                <p>Prédio Chinês Contemporâneo</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

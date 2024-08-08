@@ -126,11 +126,11 @@ form > input[type=submit] {
     height: 30px;
     border: none;
     margin: auto;
-    background-color: rgb(117, 230, 82);
+    background-color: rgb(209, 105, 105);
 }
 
 form > input[type=submit]:hover {
-    background-color: rgb(106, 172, 86);
+    background-color: rgb(167, 48, 48);
     color: aliceblue;
     cursor: pointer;
 }
@@ -144,7 +144,7 @@ form > a.botao {
     margin: auto;
     background-color: #ffffff;
     color: black;
-    border: 1px solid rgb(117, 230, 82);
+    border: 1px solid rgb(230, 82, 82);
     border-radius: 5px;
     text-decoration: none;
     padding-top: 1px;
@@ -152,7 +152,8 @@ form > a.botao {
 }
 
 form > a.botao:hover {
-    background-color: rgb(106, 172, 86);
+    background-color: rgb(172, 86, 86);
+    color: white;
 }
 
 form > a.botao > span {
