@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+
+:root {
+    /* FONTES */
+    --font1: "Josefin Sans";
+    --font2: "Playwrite AT";
+
+    /* CORES LOGIN */
+    --cor1: #262624;
+    --cor2: #59231E;
+    --cor3: #F2622E;
+    --cor4: #F29849;
+    --cor5: #F2C063;
+
+    /* CORES BACKGROUND */
+    --cor6: #400101;
+    --cor7: #730202;
+    --cor8: #F25C05;
+    --cor9: #72B6F2;
+    --cor10: #66A3F2;
+}
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600
+Celular: 600 até 768
+Tablet: 768 até 992
+Desktop: 992 até 1200
+Grandes telas: min 1200
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    
+    body {
+        background: linear-gradient(to top, #400101, #730202, #F25C05, #F2622E, #F29849, #66A3F2);
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+
+    section#login {
+        width: 90vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 98%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background: linear-gradient(to top, #730202, #F25C05, #72B6F2, #66A3F2), url(../imagens/background.jpg);
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+
+    section#login {
+        width: 990px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 98%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 48%;
+    }
+}
